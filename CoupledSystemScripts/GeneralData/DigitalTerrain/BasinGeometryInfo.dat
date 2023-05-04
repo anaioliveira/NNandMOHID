@@ -1,0 +1,9 @@
+TOPOGRAPHIC_FILE          : D:\Ana\Aplica\2_HazRunOff\MOHID\Galicia\500m_solution\GeneralData\DigitalTerrain\Galicia_ND.dat
+TRESHOLD_AREA             : 1000000
+DELINEATE_BASIN           : 1
+OUTLET_I                  : 52
+OUTLET_J                  : 27
+WRITE_DELINEATION         : 1
+DELINEATION_FILE          : D:\Ana\Aplica\2_HazRunOff\MOHID\Galicia\500m_solution\GeneralData\DigitalTerrain\Delineation.xy
+WRITE_REACHES             : 1
+REACHES_FILE              : D:\Ana\Aplica\2_HazRunOff\MOHID\Galicia\500m_solution\GeneralData\DigitalTerrain\Drainage Network.dnt

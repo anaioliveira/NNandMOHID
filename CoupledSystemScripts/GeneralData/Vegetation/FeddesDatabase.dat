@@ -1,0 +1,137 @@
+<beginfeddesdatabase>
+VEGETATION_ID             : 2                !crop ID used in this practice that has correspondence to SWAT crop growth database (see growth database)
+
+FEDDES_H1                 : 0.00             !higher head for transpiration (saturation and oxygen loss)
+FEDDES_H2                 : -0.01            !1st optimal head for transpiration
+FEDDES_H3                 : -7.0             !2nd optimal head for transpiration
+FEDDES_H4                 : -30.0            !lower head  for transpiration (wilting)
+<endfeddesdatabase>
+
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 3                !crop ID used in this practice that has correspondence to SWAT crop growth database (see growth database)
+
+FEDDES_H1                 : 0.00             !higher head for transpiration (saturation and oxygen loss)
+FEDDES_H2                 : -0.01            !1st optimal head for transpiration
+FEDDES_H3                 : -7.0             !2nd optimal head for transpiration
+FEDDES_H4                 : -30.0            !lower head  for transpiration (wilting)
+<endfeddesdatabase>
+
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 4
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 6
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 7
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 9
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 11
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 12
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 15
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 16
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 18
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 33                !crop ID used in this practice that has correspondence to SWAT crop growth database (see growth database)
+
+FEDDES_H1                 : 0.00             !higher head for transpiration (saturation and oxygen loss)
+FEDDES_H2                 : -0.01            !1st optimal head for transpiration
+FEDDES_H3                 : -7.0             !2nd optimal head for transpiration
+FEDDES_H4                 : -30.0            !lower head  for transpiration (wilting)
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 94
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 95
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+
+<beginfeddesdatabase>
+VEGETATION_ID             : 0
+
+FEDDES_H1                 : -0.1
+FEDDES_H2                 : -0.25
+FEDDES_H3                 : -6.0
+FEDDES_H4                 : -30.0
+<endfeddesdatabase>
+

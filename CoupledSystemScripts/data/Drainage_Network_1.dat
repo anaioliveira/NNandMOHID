@@ -1,0 +1,92 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Drainage Network
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!Start / Continuous Computation
+INITIAL_WATER_DEPTH       : 1.5
+CONTINUOUS                : 1
+RESTART_FILE_FORMAT       : 2
+
+!Compute Options
+NETWORK_FILE              : ../GeneralData/DigitalTerrain/Drainage Network.dnt
+GLOBAL_MANNING            : 0.035  !drainage network manning resistance
+MIN_WATER_DEPTH           : 0.01
+DISCHARGES                : 0
+HYDRODYNAMIC_APROX        : 3      !1 - KinematicWave. 2 - DiffusionWave. 3 - DynamicWave
+ALLOW_BACKWATER           : 1
+DOWNSTREAM_BOUNDARY       : 2      !0 - Dam. 1 - ZeroDepthGradient. 2 - CriticalDepth. 3 - ImposedWaterLevel. 4 - ImposedVelocity
+DEFAULT_VALUE             : -10.   !imposed level in downstream boundary if DOWNSTREAM_BOUNDARY       : 3
+MINIMUM_SLOPE             : 0.0001
+
+!Stability Options
+STABILIZE                 : 1      !connect/disconnect stability criteria
+STABILIZE_FACTOR          : 0.30   !fraction of node volume allowed for volume variation in one time step (if STABILIZE : 1)
+STABILIZE_MIN_FACTOR      : 0.001  !minimum fraction of node maximum volume to start applying stability criteria (if STABILIZE : 1)
+LIMIT_DT_COURANT          : 1      !connect/disconnect limitation of dt by courant number
+MAX_COURANT               : 0.50   !Set to lower values during floods
+
+!Output Options
+TIME_SERIE_LOCATION       : ../GeneralData/Timeseries/NodeTimeSeriesLocation.dat
+OUTPUT_TIME               : 0 3600
+TIME_SERIE_BY_NODES       : 1      !1 - output timeseries by nodes; 0 - output timeseries by properties
+
+HMIN_CHEZY                : 0.05   !minimum water column (in meters) to compute chezy for shear stress (used in cohesive sediment transport)
+
+!<beginproperty>
+!NAME                    : dissolved copper
+!UNITS                   : mg/L 
+!DESCRIPTION             : dissolved copper
+!DEFAULTVALUE            : 0.0
+!MIN_VALUE               : 0.0
+!ADVECTION_DIFUSION      : 1
+!ADVECTION_SCHEME        : 1       !Upwind
+!DIFFUSION_SCHEME        : 5       !CentralDif
+!DIFFUSIVITY             : 0.0    !m2/s
+!VIRTUAL_COEF            : 0.01
+!WATER_QUALITY           : 0
+!BENTHOS                 : 0
+!MACROALGAE              : 0
+!DECAY_T90               : 0
+!DECAY_GENERIC           : 1e-5
+!TIME_SERIE              : 1
+!BOTTOM_FLUXES           : 0
+!PARTICULATE             : 0
+!DISCHARGES              : 1
+!OLD                       : 1
+!<endproperty>
+
+!<beginproperty>
+!NAME                      : cohesive sediment
+!UNITS                     : mg/l
+!DESCRIPTION               : cohesive sediment
+!PARTICULATE               : 1
+!BOTTOM_FLUXES             : 1
+!ADVECTION_DIFUSION        : 1
+!DISCHARGES                : 0
+!DEFAULTVALUE              : 0.0
+!DIFFUSIVITY               : 0.0
+!BOTTOM_CONC               : 1.0       !kg/m2
+!EROSION                   : 1
+!CRIT_SS_EROSION           : 25.0      !Pa
+!EROSION_COEF              : 1.E-6   !kg m-2 s-1
+!DEPOSITION                : 1
+!WS_TYPE                   : 1              !1 - constant; 2 - Concentration function
+!WS_VALUE                  : 1E-5 !1E-4    !m/s (read if WS_TYPE : 1)
+!CRIT_SS_DEPOSITION        : 5.0 !0.1      !Pa
+!TIME_SERIE                : 1
+!OUTPUT_HDF                : 1
+!!INTEGRATE_MASS_FLUX       : 1
+!!INTEGRATE_MASS_FLUX_DT    : 3600.
+!MIN_VALUE                 : 0.0
+!OLD                       : 1
+!<endproperty>
+
+
+
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2013. Action Modulers. http://www.actionmodulers.com
+!

@@ -1,0 +1,315 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Porous Media
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!
+!Start / Continuous Computation
+CONTINUOUS                : 1
+RESTART_FILE_FORMAT       : 2
+
+CONDUTIVITYFACE           : 3
+
+!Compute Options
+THETA_HYDRO_COEF          : 0.98    !fraction of saturation to start computing hydrostatic pressure
+CUT_OFF_THETA_HIGH        : 1e-20   !limit to thetaS to consider saturation value
+!CUT_OFF_THETA_LOW         : 1e-15   !limit to thetaR to consider residual value
+BOTTOM_FILE               : ../GeneralData/DigitalTerrain/Galicia_ND_Bottom_v01.dat
+START_WITH_FIELD          : 1
+
+IGNORE_WATER_COLUMN_ON_EVAP :  1
+LIMIT_EVAP_WATER_VEL      : 1       !connect/disconnect limitation of evaporation to conductivity
+LIMIT_EVAP_HEAD           : 1       !connect/disconnect limitation of evaporation to head
+HEAD_LIMIT                : -100    !head limit to evaporation (if LIMIT_EVAP_HEAD : 1)
+
+HORIZONTAL_K_FACTOR       : 10.0    !horizontal conductivity multiplying factor
+
+!Stability Options
+STABILIZE                 : 1       !connect/disconnect stability criteria
+STABILIZE_FACTOR          : 0.05    !fraction of cell volume allowed for volume variation in one time step (if STABILIZE : 1)
+MIN_ITERATIONS            : 2       !minimum number of internal iteration to start asking for a lower global dt
+MAX_ITERATIONS            : 1000    !maximum number of internal iterations allowed for the module
+DT_FACTOR                 : 1.5     !factor for next internal dt prediction (increase dt by the factor if stable. reduce otherwise)
+
+!Soil Type Block
+<beginsoiltype>
+ID: 1.0
+THETA_S: 0.4912
+THETA_R: 0.0
+N_FIT: 1.1931
+SAT_K: 1.639814814814815e-05
+ALPHA: 3.47
+L_FIT: -4.3
+<endsoiltype>
+
+<beginsoiltype>
+ID: 2.0
+THETA_S: 0.4912
+THETA_R: 0.0
+N_FIT: 1.1931
+SAT_K: 1.639814814814815e-05
+ALPHA: 3.47
+L_FIT: -4.3
+<endsoiltype>
+
+<beginsoiltype>
+ID: 3.0
+THETA_S: 0.4646
+THETA_R: 0.0
+N_FIT: 1.116
+SAT_K: 2.2587199074074075e-04
+ALPHA: 12.839999999999998
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 4.0
+THETA_S: 0.4407
+THETA_R: 0.0
+N_FIT: 1.1904
+SAT_K: 5.1940740740740744e-05
+ALPHA: 7.5
+L_FIT: -4.3523
+<endsoiltype>
+
+<beginsoiltype>
+ID: 5.0
+THETA_S: 0.4239
+THETA_R: 0.0
+N_FIT: 1.2545
+SAT_K: 1.348726851851852e-06
+ALPHA: 0.74
+L_FIT: -3.5496
+<endsoiltype>
+
+<beginsoiltype>
+ID: 6.0
+THETA_S: 0.4086
+THETA_R: 0.0
+N_FIT: 1.1335
+SAT_K: 5.0494328703703706e-05
+ALPHA: 7.000000000000001
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 7.0
+THETA_S: 0.4627
+THETA_R: 0.0
+N_FIT: 1.1892
+SAT_K: 1.5995370370370368e-04
+ALPHA: 1.0699999999999998
+L_FIT: -2.6418
+<endsoiltype>
+
+<beginsoiltype>
+ID: 8.0
+THETA_S: 0.4322
+THETA_R: 0.0
+N_FIT: 1.1701
+SAT_K: 9.925925925925926e-06
+ALPHA: 3.36
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 9.0
+THETA_S: 0.4322
+THETA_R: 0.0
+N_FIT: 1.1701
+SAT_K: 9.925925925925926e-06
+ALPHA: 3.36
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 10.0
+THETA_S: 0.437
+THETA_R: 0.0
+N_FIT: 1.1966
+SAT_K: 6.192071759259259e-05
+ALPHA: 6.81
+L_FIT: -3.7279
+<endsoiltype>
+
+<beginsoiltype>
+ID: 11.0
+THETA_S: 0.4133
+THETA_R: 0.0
+N_FIT: 1.1191
+SAT_K: 1.4297800925925928e-05
+ALPHA: 2.27
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 12.0
+THETA_S: 0.3839
+THETA_R: 0.0
+N_FIT: 1.1206
+SAT_K: 4.292743055555556e-05
+ALPHA: 7.17
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 13.0
+THETA_S: 0.422
+THETA_R: 0.0
+N_FIT: 1.2483
+SAT_K: 2.0313657407407408e-06
+ALPHA: 0.77
+L_FIT: -3.3247
+<endsoiltype>
+
+<beginsoiltype>
+ID: 14.0
+THETA_S: 0.408
+THETA_R: 0.0
+N_FIT: 1.1993
+SAT_K: 5.255787037037037e-07
+ALPHA: 0.32
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 15.0
+THETA_S: 0.4322
+THETA_R: 0.0
+N_FIT: 1.1701
+SAT_K: 9.925925925925926e-06
+ALPHA: 3.36
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 16.0
+THETA_S: 0.4322
+THETA_R: 0.0
+N_FIT: 1.1701
+SAT_K: 9.925925925925926e-06
+ALPHA: 3.36
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 17.0
+THETA_S: 0.437
+THETA_R: 0.0
+N_FIT: 1.1966
+SAT_K: 6.192071759259259e-05
+ALPHA: 6.81
+L_FIT: -3.7279
+<endsoiltype>
+
+<beginsoiltype>
+ID: 18.0
+THETA_S: 0.4133
+THETA_R: 0.0
+N_FIT: 1.1191
+SAT_K: 1.4297800925925928e-05
+ALPHA: 2.27
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 19.0
+THETA_S: 0.3839
+THETA_R: 0.0
+N_FIT: 1.1206
+SAT_K: 4.292743055555556e-05
+ALPHA: 7.17
+L_FIT: -5.0
+<endsoiltype>
+
+!Horizon Block
+<beginhorizon>
+KLB                       : 1
+KUB                       : 2
+
+<beginproperty>
+NAME                      : SoilID
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : ../GeneralData/PorousMedia/Galicia_ND_soil_ids_dl_200.dat
+DEFAULTVALUE              : 1
+REMAIN_CONSTANT           : 0
+<endproperty>
+
+<beginproperty>
+NAME                      : Theta
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.25
+<endproperty>
+<endhorizon>
+
+!Horizon Block
+<beginhorizon>
+KLB                       : 3
+KUB                       : 4
+
+<beginproperty>
+NAME                      : SoilID
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : ../GeneralData/PorousMedia/Galicia_ND_soil_ids_dl_100.dat
+DEFAULTVALUE              : 1
+REMAIN_CONSTANT           : 0
+<endproperty>
+
+<beginproperty>
+NAME                      : Theta
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.25
+<endproperty>
+<endhorizon>
+
+!Horizon Block
+<beginhorizon>
+KLB                       : 5
+KUB                       : 6
+
+<beginproperty>
+NAME                      : SoilID
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : ../GeneralData/PorousMedia/Galicia_ND_soil_ids_dl_30.dat
+DEFAULTVALUE              : 1
+REMAIN_CONSTANT           : 0
+<endproperty>
+
+<beginproperty>
+NAME                      : Theta
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.25
+<endproperty>
+<endhorizon>
+
+!Ground Water Aquifer Initialization
+<beginwaterlevel>
+NAME                      : waterlevel
+INITIALIZATION_METHOD     : ASCII_FILE
+!INITIALIZATION_METHOD     : CONSTANT
+FILENAME                  : ../GeneralData/DigitalTerrain/Galicia_ND_WaterLevel.dat
+DEFAULTVALUE              : 0
+REMAIN_CONSTANT           : 0
+<endwaterlevel>
+
+!Impermeable Fraction
+<beginimpermeablefraction>
+NAME                      : impermeablefraction
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : ../GeneralData/PorousMedia/impermeability.dat
+!INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0
+REMAIN_CONSTANT           : 0
+<endimpermeablefraction>
+
+
+!Output Options
+OUTPUT_TIME       : 0 86400
+TIME_SERIE                : 0
+!TIME_SERIE_LOCATION       : ../GeneralData/Timeseries/TimeSeriesLocation.dat
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2013. Action Modulers. http://www.actionmodulers.com
+!

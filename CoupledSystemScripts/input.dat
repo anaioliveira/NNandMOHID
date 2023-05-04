@@ -1,0 +1,28 @@
+#TIME KEYWORDS
+BEGIN_DATE : 2008 01 01 00 00 00
+END_DATE : 2018 01 01 00 00 00
+
+TIME_STEP : 1 #(1 - 1 DAY, 2 - 1 MONTH)
+
+CONTINUOUS : 0
+
+GLUE_METEO_FILES : 1
+
+#METEO FILES INFORMATION
+METEO_FOLDER : E:/MOHIDUlla/Meteo/
+
+PATH_TO_BOUNDARY_CONDITIONS_FOLDER : C:/Users/anaoliveira/Desktop/MOHIDUlla/Mod_NoReservoirs/MOHID/GeneralData/BoundaryConditions/
+METEO_FILENAME_TO_BOUNDARY_CONDITIONS : Meteo
+
+#MOHID INFORMATION
+MOHID_DATA_FOLDER : C:/Users/anaoliveira/Desktop/MOHIDUlla/Mod_NoReservoirs/MOHID/data/
+MOHID_EXE_FOLDER : C:/Users/anaoliveira/Desktop/MOHIDUlla/Mod_NoReservoirs/MOHID/exe/
+MOHID_RES_FOLDER : C:/Users/anaoliveira/Desktop/MOHIDUlla/Mod_NoReservoirs/MOHID/res/
+CONVERT_TO_HDF5_FOLDER : C:/Users/anaoliveira/Desktop/MOHIDUlla/Mod_NoReservoirs/MOHID/GeneralData/BoundaryConditions/ConvertToHDF5/
+
+SIMULATION_NUMBER : 1
+
+#BACKUP FOLDERS
+HDF_BACKUP_FOLDER : E:/MOHIDUlla/Mod_NoReservoirs/Results/HDF/
+TIMESERIES_BACKUP_FOLDER : E:/MOHIDUlla/Mod_NoReservoirs/Results/Timeseries/
+RESTART_BACKUP_FOLDER : E:/MOHIDUlla/Mod_NoReservoirs/Results/Restart/

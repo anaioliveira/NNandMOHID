@@ -1,0 +1,261 @@
+!No Vegetation
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 0
+
+VEGETATION_ID             : 0
+NAME                      : NoVeg
+
+<begintimingparameters>
+PLANTING_JULIANDAY        : -99.
+PLANTING_HUBASE           : 2.00    !will not start
+MATURITY_HU               : 1700.
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!Irrigation
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 2                !agriculture practice ID
+NAME                      : AGRR
+
+VEGETATION_ID             : 2
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : -99      !julian day when planting will occur - Summer crop April
+PLANTING_HUBASE                   : 0.20      !Percentage of POTENTIAL YEARLY HU when planting will occur
+MATURITY_HU                       : 1700.     !Total PLANT ACCUMULATED HU when reaching maturity
+<endtimingparameters>
+
+<beginharvestkillparameters>
+!active if in data file HARVEST_KILL : 1
+HARVESTKILL_JULIANDAY             : -99      !julian day when harvestkill operation occur - Summer Crop Out
+HARVESTKILL_PLANTHU               : 1.2       !Percentage of PLANT ACCUMULATED HU when harvestkill operation occur
+HARVEST_JULIANDAY                 : -99.      !julian day when harvest operation occur
+HARVEST_PLANTHU                   : -99.      !Percentage of PLANT ACCUMULATED HU when harvest operation occur
+HARVEST_EFFICIENCY                : 1.0       !Efficiency for harvest operation (residue if lower than 1)
+KILL_JULIANDAY                    : -99.      !julian day when harvestkill operation occur
+KILL_PLANTHU                      : -99.      !Percentage of PLANT ACCUMULATED HU when kill operation occur
+<endharvestkillparameters>
+
+<endagriculturalpractice>
+
+
+!Cold season annual
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 3                !agriculture practice ID
+NAME                      : AGRC
+
+VEGETATION_ID             : 3
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : -99      !julian day when planting will occur
+PLANTING_HUBASE                   : 0.87      !Percentage of POTENTIAL YEARLY HU when planting will occur
+MATURITY_HU                       : 1700.     !Total PLANT ACCUMULATED HU when reaching maturity
+<endtimingparameters>
+
+<beginharvestkillparameters>
+!active if in data file HARVEST_KILL : 1
+HARVESTKILL_JULIANDAY             : -99.      !julian day when harvestkill operation occur
+HARVESTKILL_PLANTHU               : 1.2       !Percentage of PLANT ACCUMULATED HU when harvestkill operation occur
+HARVEST_JULIANDAY                 : -99.      !julian day when harvest operation occur
+HARVEST_PLANTHU                   : -99      !Percentage of PLANT ACCUMULATED HU when harvest operation occur
+HARVEST_EFFICIENCY                : 1.0       !Efficiency for harvest operation (residue if lower than 1)
+KILL_JULIANDAY                    : -99.      !julian day when harvestkill operation occur
+KILL_PLANTHU                      : -99      !Percentage of PLANT ACCUMULATED HU when kill operation occur
+<endharvestkillparameters>
+
+<endagriculturalpractice>
+
+
+
+!Orchard/Olive/Vineyards
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 4
+
+VEGETATION_ID             : 4
+NAME                      : ORCD
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1000.
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!FRST
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 6
+
+VEGETATION_ID             : 6
+NAME                      : FRST
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1000.0
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!FRSD
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 7
+
+VEGETATION_ID             : 7
+NAME                      : FRSD
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1000.0
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!WETL
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 9
+
+VEGETATION_ID             : 9
+NAME                      : WETL
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1000.
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!WETN
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 11
+
+VEGETATION_ID             : 11
+NAME                      : WETN
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1500.
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!PAST
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 12
+
+VEGETATION_ID             : 12
+NAME                      : PAST
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1500.
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!RNGE
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 15
+
+VEGETATION_ID             : 15
+NAME                      : RNGE
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1700.
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!RNGB
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 16
+
+VEGETATION_ID             : 16
+NAME                      : RNGB
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1700.
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!Water
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 18
+
+VEGETATION_ID             : 18
+NAME                      : WATR
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : -99.
+PLANTING_HUBASE                   : 2.00    !will not start 
+MATURITY_HU                       : 1700.
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+
+!RICE
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 33                !agriculture practice ID
+NAME                      : RICE
+
+VEGETATION_ID             : 33
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : -99      !julian day when planting will occur - Summer crop April
+PLANTING_HUBASE                   : 0.33      !Percentage of POTENTIAL YEARLY HU when planting will occur
+MATURITY_HU                       : 1700.     !Total PLANT ACCUMULATED HU when reaching maturity
+<endtimingparameters>
+
+<beginharvestkillparameters>
+!active if in data file HARVEST_KILL : 1
+HARVESTKILL_JULIANDAY             : -99.      !julian day when harvestkill operation occur - Summer crop October
+HARVESTKILL_PLANTHU               : 1.2       !Percentage of PLANT ACCUMULATED HU when harvestkill operation occur
+HARVEST_JULIANDAY                 : -99.      !julian day when harvest operation occur
+HARVEST_PLANTHU                   : -99      !Percentage of PLANT ACCUMULATED HU when harvest operation occur
+HARVEST_EFFICIENCY                : 1.0       !Efficiency for harvest operation (residue if lower than 1)
+KILL_JULIANDAY                    : -99.      !julian day when harvestkill operation occur
+KILL_PLANTHU                      : -99      !Percentage of PLANT ACCUMULATED HU when kill operation occur
+<endharvestkillparameters>
+
+<endagriculturalpractice>
+
+!Pine
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 94
+
+VEGETATION_ID             : 94
+NAME                      : PINE
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1000
+<endtimingparameters>
+
+<endagriculturalpractice>
+
+!Pine
+<beginagriculturalpractice>
+AGRIC_PRACT_ID            : 95
+
+VEGETATION_ID             : 95
+NAME                      : OAK
+
+<begintimingparameters>
+PLANTING_JULIANDAY                : 277.
+PLANTING_HUBASE                   : -99 
+MATURITY_HU                       : 1000
+<endtimingparameters>
+
+<endagriculturalpractice>

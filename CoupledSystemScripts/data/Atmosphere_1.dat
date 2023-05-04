@@ -1,0 +1,102 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Atmosphere
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!
+!Output Options
+OUTPUT_TIME               : 0 86400
+!TIME_SERIE_LOCATION       : ../GeneralData/Timeseries/TimeSeriesLocation.dat
+
+!A property block. this property values given by timeseries
+<beginproperty>
+NAME                      : precipitation
+UNITS                     : mm
+DESCRIPTION               : precipitation
+FILE_IN_TIME              : HDF
+FILENAME                  : ../GeneralData/BoundaryConditions/meteo.hdf5
+!DATA_COLUMN               : 4
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 0           !maintain DEFAULTVALUE in time? only used if values not given by timeseries or HDF
+TIME_SERIE                : 0           !output this property in timeseries (use TIME_SERIE_LOCATION)?
+OUTPUT_HDF                : 1           !output this property in HDF format (map)?
+ACCUMULATE_VALUES         : 1           !only for precipitation. To assure that the integrated amount is the same as data
+<endproperty>
+
+<beginproperty>
+NAME                      : wind velocity
+UNITS                     : m/s
+DESCRIPTION               : wind velocity
+FILE_IN_TIME              : HDF
+FILENAME_X                : ../GeneralData/BoundaryConditions/meteo.hdf5
+FILENAME_Y                : ../GeneralData/BoundaryConditions/meteo.hdf5
+HDF_FIELD_NAME_X          : wind velocity X
+HDF_FIELD_NAME_Y          : wind velocity Y
+DEFAULTVALUE              : 0.0 0.0
+REMAIN_CONSTANT           : 1
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : wind modulus
+UNITS                     : m/s
+DESCRIPTION               : wind velocity
+!FILE_IN_TIME              : HDF
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : solar radiation
+UNITS                     : W/m2
+DESCRIPTION               : Climatologic Solar Radiation
+DEFAULTVALUE              : 0.0
+FILE_IN_TIME              : HDF
+FILENAME                  : ../GeneralData/BoundaryConditions/meteo.hdf5
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : air temperature
+UNITS                     : C
+DESCRIPTION               : air temperature from hdf
+DEFAULTVALUE              : 0.0
+FILE_IN_TIME              : HDF
+FILENAME                  : ../GeneralData/BoundaryConditions/meteo.hdf5
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : relative humidity
+UNITS                     : fraction
+DESCRIPTION               : relative humidity from hdf
+DEFAULTVALUE              : 0.0
+FILE_IN_TIME              : HDF
+FILENAME                  : ../GeneralData/BoundaryConditions/meteo.hdf5
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : cloud cover
+UNITS                     : fraction
+DESCRIPTION               : invented cloud cover
+DEFAULTVALUE              : 0.0
+CLOUD_COVER_METHOD        : 3
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2013. Action Modulers. http://www.actionmodulers.com
+!

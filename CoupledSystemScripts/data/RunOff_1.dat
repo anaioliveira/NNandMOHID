@@ -1,0 +1,57 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: RunOff
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!Start / Continuous Computation
+CONTINUOUS                : 1
+RESTART_FILE_FORMAT       : 2
+
+!Compute Options
+HYDRODYNAMIC_APROX        : 3        !1 - KinematicWave. 2 - DiffusionWave. 3 - DynamicWave
+ADJUST_SLOPE              : 1
+MIN_WATER_COLUMN          : 0.0001
+
+!Stability Options
+STABILIZE                 : 1        !connect/disconnect stability criteria
+STABILIZE_FACTOR          : 0.05     !fraction of cell volume allowed for volume variation in one time step (if STABILIZE : 1)
+MIN_ITERATIONS            : 4        !minimum number of internal iteration to start asking for a lower global dt
+MAX_ITERATIONS            : 100000   !maximum number of internal iterations allowed for the module
+LIMIT_DT_COURANT          : 1        !connect/disconnect limitation of dt by courant number
+MAX_COURANT               : 0.50
+
+DT_FACTOR                 : 1.5      !factor for next internal dt prediction (increase dt by the factor if stable. reduce otherwise)
+DT_SPLIT_FACTOR           : 1.25     !factor to predict next number of iteration
+
+IMPOSE_BOUNDARY_VALUE     : 0        !connect/disconnect imposing boundary value
+BOUNDARY_VALUE            : 0
+
+SIMPLE_CHANNEL_FLOW       : 1
+ROUTE_D4                  : 1        !connect/disconnect route of water in 8 direction if accumulation cells exist
+ROUTE_D4_ON_DN            : 1        !connect/disconnect the same process on cells that have drainage network
+
+!Manning resistance
+<BeginOverLandCoefficient>
+FILE_IN_TIME              : NONE
+REMAIN_CONSTANT           : 1
+DEFAULTVALUE              : 0.3
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : ../GeneralData/Runoff/Galicia_Manning.dat
+!INITIALIZATION_METHOD     : CONSTANT
+<EndOverLandCoefficient>
+
+!Initial water column
+<BeginInitialWaterColumn>
+FILE_IN_TIME              : NONE
+INITIALIZATION_METHOD     : CONSTANT
+REMAIN_CONSTANT           : 0
+DEFAULTVALUE              : 0.01
+<EndInitialWaterColumn>
+
+!Output Options
+OUTPUT_TIME               : 0 3600
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2013. Action Modulers. http://www.actionmodulers.com
+!

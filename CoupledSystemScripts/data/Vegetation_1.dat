@@ -1,0 +1,179 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Vegetation
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!
+CONTINUOUS                : 1
+RESTART_FILE_FORMAT       : 2
+
+VEGETATION_DT             : 86400
+INTEGRATION_DT            : 3600     !hourly meteorology data
+
+!Option 1 - vegetation doesnt grow, option 2 - vegetation grows accordding to GrowthDatabase.dat
+MODEL_EVOLUTION            : 2     !1 read solution; 2 growth model
+CORRECT_NEGATIVE_LAI       : 1
+
+!Agricultural practices
+<begin_AgriculturalPractices>
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : ../GeneralData/Vegetation/Galicia_VegetationIDs.dat
+DEFAULTVALUE              : 6
+REMAIN_CONSTANT           : 0
+<end_AgriculturalPractices>
+
+!Vegetation Parameter Data Base
+!Definition of agricultural practices
+PARAMETERS_FILE           : ../GeneralData/Vegetation/VegetationParameters.dat
+GROWTH_DATABASE           : ../GeneralData/Vegetation/GrowthDatabase.dat
+
+!Feddes water uptake stress
+!Used if WATER_UPTAKE_METHOD : 1 - based on feddes suction head minimum, maximum and optimum
+FEDDES_DATABASE           : ../GeneralData/Vegetation/FeddesDatabase.dat
+
+!Readed if growth simulation and PESTICIDE : 1
+!PESTICIDE_DATABASE         : general_data/initial_conditions/pesticide.dat
+
+!Readed if growth simulation and if FERTILIZATION : 1
+!FERTILIZER_DATABASE        : general_data/initial_conditions/fertilizer.dat
+
+!Vegetation stress and uptake simulation
+WATER_UPTAKE              : 1
+WATER_STRESS              : 1
+NITROGEN_STRESS           : 0
+PHOSPHORUS_STRESS         : 0
+TEMPERATURE_STRESS        : 1
+
+LIMIT_TRANSP_WATER_VEL     : 0
+WATER_UPTAKE_METHOD        : 1 !1- TP according to root profile
+ROOT_PROFILE               : 3 !1- triangular; 2- Constant; 3-Exponential (only read if WATER_UPTAKE_METHOD : 1)
+WATER_UPTAKE_STRESS_METHOD : 1 !1-Feddes; 2- VanGenuchten (only read if WATER_UPTAKE_METHOD : 1)
+NUTRIENT_UPTAKE_METHOD     : 2 !1 - Uptake of all nutrients; 2 - SWAT based; 3 - No nutrient uptake
+NUTRIENT_REDUCE_UPTAKE     : 0
+
+ADJUST_RUE_FOR_CO2         : 1 !Connects/disconnects CO2 limitation on plant growth
+ADJUST_RUE_FOR_VPD         : 1 !Connects/disconnects Vapour Pressure Deficit limitation on plant growth?
+
+GRAZING                    : 0
+HARVEST_KILL               : 1 !Connect/Disconnect management (planting, harvest, kill)
+DORMANCY                   : 0 !Connect/Disconnect dormancy (active in plants that go dormant)
+FERTILIZATION              : 0
+PESTICIDE                  : 0
+NUTRIENT_FLUXES_WITH_SOIL  : 0
+
+CHANGE_LAI_SENESCENCE      : 0
+CHANGE_CANOPY_HEIGHT       : 0
+
+ATMOSPHERE_OUTPUT          : 1
+FLUXES_TO_SOIL_OUTPUT      : 0
+
+!Output Options
+!TIME_SERIE_LOCATION       : ../GeneralData/Timeseries/TimeSeriesLocation.dat
+OUTPUT_TIME               : 0 86400
+
+!Potential total HU (yearly HU) -  SUMi=1to12(average monthly temperature in month i * days in month i)
+<begin_TotalPotentialHU>
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 5475.
+REMAIN_CONSTANT           : 0
+<end_TotalPotentialHU>
+
+!Vegetation properties
+<beginproperty>
+NAME                      : specific leaf storage
+UNITS                     : m3/m2
+DESCRIPTION               : plant specific leaf storage
+FILE_IN_TIME              : NONE
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 1
+OUTPUT_HDF                : 1
+TIME_SERIE                : 0
+EVOLUTION                 : 1
+OLD                       : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : crop coefficient
+UNITS                     : -
+DESCRIPTION               : plant transpiration coefficient
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : ../GeneralData/Vegetation/Galicia_Kc.dat
+DEFAULTVALUE              : 1.0
+!INITIALIZATION_METHOD     : CONSTANT
+REMAIN_CONSTANT           : 0
+OUTPUT_HDF                : 1
+TIME_SERIE                : 0
+EVOLUTION                 : 1
+OLD                       : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : root depth
+UNITS                     : m
+DESCRIPTION               : plant root depth
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 0
+OUTPUT_HDF                : 1
+TIME_SERIE                : 0
+EVOLUTION                 : 2
+OLD                       : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : leaf area index
+UNITS                     : m2/m2
+DESCRIPTION               : plant leaf area index
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 0
+OUTPUT_HDF                : 1
+TIME_SERIE                : 0
+EVOLUTION                 : 2
+OLD                       : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : root biomass
+UNITS                     : kg/ha
+DESCRIPTION               : root biomass
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 0
+OUTPUT_HDF                : 1
+TIME_SERIE                : 0
+EVOLUTION                 : 2
+OLD                       : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : total plant biomass
+UNITS                     : kg/ha
+DESCRIPTION               : plant biomass
+EVOLUTION                 : 2
+DEFAULTVALUE              : 0.
+REMAIN_CONSTANT           : 0
+OUTPUT_HDF                : 1
+TIME_SERIE                : 0
+OLD                       : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : canopy height
+UNITS                     : m
+DESCRIPTION               : plant canopy height
+EVOLUTION                 : 2
+DEFAULTVALUE              : 0.
+REMAIN_CONSTANT           : 0
+OUTPUT_HDF                : 1
+TIME_SERIE                : 0
+OLD                       : 1
+<endproperty>
+
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2013. Action Modulers. http://www.actionmodulers.com
+!

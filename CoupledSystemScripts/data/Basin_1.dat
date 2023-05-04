@@ -1,0 +1,82 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Basin
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Basin
+!Please complete and comment/uncomment for your specific needs
+!
+!
+
+!Start / Continuous Computation
+CONTINUOUS                : 1
+RESTART_FILE_FORMAT       : 2
+VERIFY_MASS               : 0
+
+!Compute Options. Modules active
+ATMOSPHERE                : 1
+EVAPOTRANSPIRATION        : 1
+EVAPOTRANSPIRATION_METHOD : 2
+EVAP_METHOD               : 3       !Evaporation from canopy and water column method !1 - latent heat method, 2 - uses potential evaporation !3 - no evaporation from canopy and water column
+EVAP_FROM_WATER_COLUMN    : 0
+EVAP_FROM_CANOPY          : 0
+POROUS_MEDIA              : 1
+RUN_OFF                   : 1
+SCSCN_RUNOFF_MODEL        : 0
+DRAINAGE_NET              : 1
+VEGETATION                : 1
+POROUS_MEDIA_PROPERTIES   : 0
+RUN_OFF_PROPERTIES        : 0
+RESERVOIRS                : 0
+IRRIGATION                : 0
+
+DEFAULT_KC_WHEN_LAI_ZERO  : 1.0
+
+!initial DT when raining
+DT_DURING_RAIN            : 1.
+
+!Output Options
+OUTPUT_TIME               : 0 86400
+!TIME_SERIE_LOCATION       : ../GeneralData/Timeseries/TimeSeriesLocation.dat
+
+
+!Evapotranspiration property block
+<beginproperty>
+NAME                      : reference evapotranspiration
+UNITS                     : mm/h
+DESCRIPTION               : fao evapotranspiration
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 0
+<endproperty>
+
+
+<BeginCurveNumber>
+NAME                      : Curve Number
+UNITS                     : -
+INITIALIZATION_METHOD     : CONSTANT
+!INITIALIZATION_METHOD     : ASCII_FILE
+!FILENAME                  : ../GeneralData/DigitalTerrain/Oeste_CurveNumber.dat
+DESCRIPTION               : Curve Number
+DEFAULTVALUE              : 75
+REMAIN_CONSTANT           : 0
+<EndCurveNumber>
+
+<BeginVegGrowthStage>
+NAME                      : VegGrowthStage
+UNITS                     : -
+DESCRIPTION               : state of the vegetation
+DEFAULTVALUE              : 2
+REMAIN_CONSTANT           : 0
+<EndVegGrowthStage>
+
+<BeginImpFrac>
+NAME                      : Imp. Fraction
+UNITS                     : -
+DESCRIPTION               : Impermeable Fraction of the Terrain
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 1
+<EndImpFrac>

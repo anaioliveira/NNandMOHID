@@ -1,0 +1,16 @@
+<begin_file>
+ACTION                    : GLUES HDF5 FILES
+
+3D_FILE                   : 0
+
+TIME_GROUP                : Time
+
+BASE_GROUP                : Results
+
+OUTPUTFILENAME            : c:/users/anaoliveira/desktop/mohidulla/mod_noreservoirs/mohid/generaldata/boundaryconditions/meteo.hdf5
+
+<<begin_list>>
+e:/mohidulla/meteo/20171230.hdf5
+e:/mohidulla/meteo/20171231.hdf5
+<<end_list>>
+<end_file>

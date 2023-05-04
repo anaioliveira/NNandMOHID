@@ -1,0 +1,121 @@
+!File with Soil Properties
+<beginsoiltype>
+ID: 1.0
+THETA_S: 0.4912
+THETA_R: 0.0
+N_FIT: 1.1931
+SAT_K: 1.639814814814815e-06
+ALPHA: 3.47
+L_FIT: -4.3
+<endsoiltype>
+
+<beginsoiltype>
+ID: 2.0
+THETA_S: 0.0
+THETA_R: 0.0
+N_FIT: 0.0
+SAT_K: 0.0
+ALPHA: 0.0
+L_FIT: 0.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 3.0
+THETA_S: 0.4646
+THETA_R: 0.0
+N_FIT: 1.116
+SAT_K: 2.2587199074074075e-05
+ALPHA: 12.839999999999998
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 4.0
+THETA_S: 0.4086
+THETA_R: 0.0
+N_FIT: 1.1335
+SAT_K: 5.0494328703703706e-06
+ALPHA: 7.000000000000001
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 5.0
+THETA_S: 0.4322
+THETA_R: 0.0
+N_FIT: 1.1701
+SAT_K: 9.925925925925926e-07
+ALPHA: 3.36
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 6.0
+THETA_S: 0.4133
+THETA_R: 0.0
+N_FIT: 1.1191
+SAT_K: 1.4297800925925928e-06
+ALPHA: 2.27
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 7.0
+THETA_S: 0.3839
+THETA_R: 0.0
+N_FIT: 1.1206
+SAT_K: 4.292743055555556e-06
+ALPHA: 7.17
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 8.0
+THETA_S: 0.0
+THETA_R: 0.0
+N_FIT: 0.0
+SAT_K: 0.0
+ALPHA: 0.0
+L_FIT: 0.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 9.0
+THETA_S: 0.4322
+THETA_R: 0.0
+N_FIT: 1.1701
+SAT_K: 9.925925925925926e-07
+ALPHA: 3.36
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 10.0
+THETA_S: 0.4133
+THETA_R: 0.0
+N_FIT: 1.1191
+SAT_K: 1.4297800925925928e-06
+ALPHA: 2.27
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 11.0
+THETA_S: 0.3839
+THETA_R: 0.0
+N_FIT: 1.1206
+SAT_K: 4.292743055555556e-06
+ALPHA: 7.17
+L_FIT: -5.0
+<endsoiltype>
+
+<beginsoiltype>
+ID: 12.0
+THETA_S: 0.0
+THETA_R: 0.0
+N_FIT: 0.0
+SAT_K: 0.0
+ALPHA: 0.0
+L_FIT: 0.0
+<endsoiltype>
+

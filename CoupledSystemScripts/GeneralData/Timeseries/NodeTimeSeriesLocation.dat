@@ -1,0 +1,45 @@
+!Time Series Locations for D:\Ana\Aplica\2_HazRunOff\MOHID\Galicia\500m_solution\GeneralData\DigitalTerrain\Drainage Network.dnt
+DT_OUTPUT_TIME            : 3600
+MAX_BUFFER_SIZE           : 10000
+<BeginNodeTimeSerie>
+NODE_ID                   : 2197
+NAME                      : 544
+COORD_X                   : -8.023826
+COORD_Y                   : 42.845998
+<EndNodeTimeSerie>
+<BeginNodeTimeSerie>
+NODE_ID                   : 1871
+NAME                      : 546
+COORD_X                   : -8.098826
+COORD_Y                   : 42.780998
+<EndNodeTimeSerie>
+<BeginNodeTimeSerie>
+NODE_ID                   : 906
+NAME                      : 552
+COORD_X                   : -8.338826
+COORD_Y                   : 42.775998
+<EndNodeTimeSerie>
+<BeginNodeTimeSerie>
+NODE_ID                   : 1127
+NAME                      : 550
+COORD_X                   : -8.268826
+COORD_Y                   : 42.825998
+<EndNodeTimeSerie>
+<BeginNodeTimeSerie>
+NODE_ID                   : 143
+NAME                      : 540
+COORD_X                   : -8.648826
+COORD_Y                   : 42.820998
+<EndNodeTimeSerie>
+<BeginNodeTimeSerie>
+NODE_ID                   : 390
+NAME                      : 554
+COORD_X                   : -8.543826
+COORD_Y                   : 42.755998
+<EndNodeTimeSerie>
+<BeginNodeTimeSerie>
+NODE_ID                   : 1512
+NAME                      : MontantePortodemouros
+COORD_X                   : -8.178826
+COORD_Y                   : 42.855998
+<EndNodeTimeSerie>

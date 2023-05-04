@@ -1,0 +1,13 @@
+<begindischarge>
+ID: 1
+RESERVOIR_ID: 1
+NAME: Portodemouros
+DN_NODE_ID: 8733
+GRID_I: 104
+GRID_J: 162
+DISCHARGE_TYPE: 1
+DATA_BASE_FILE: C:\Users\anaoliveira\Desktop\MOHIDUlla\Mod_Reservoirs_ANNPortodemouros\MOHID\GeneralData\Reservoirs\OutflowTimeseries\portodemouros.dat
+FLOW_COLUMN: 2
+USE_ORIGINAL_VALUES: 1
+IS_OUTFLOW: 1
+<enddischarge>
